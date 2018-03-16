@@ -2,6 +2,40 @@
 * {
     box-sizing: border-box; /*define el tamaño de la caja y el borde*/
 }
+.ul-a{
+    background: #f44336;
+    padding: 40px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f44336;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #f9736c;
+}
+
+.active {
+    background-color:#f9736c;
+}
+
 /*Define como va a estar compuesto el cuerpo*/
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,12 +58,19 @@ th{
 .img-producto{
   width: 150px; height: 140px;
 }
+.img-logo{
+  width: 180px; height: 150px;
+}
+.p-stock {
+    border: 2px solid red;
+    border-radius: 5px;
+}
 /* Estilos de header */
 .header {
     background-color: #f1f1f1;
-    padding: 30px;/*espacio de relleno requerido*/
+    padding: 10px;/*espacio de relleno requerido*/
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 /*Estilos del boton*/
 .h1-titulo {
@@ -37,6 +78,7 @@ th{
     text-transform: uppercase;
     color: #f44336;
 }
+
 button {
     background-color: #f44336;
     border: none;
@@ -48,6 +90,7 @@ button {
     font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
+
 }
 /*Estilo del boton ir*/
 .button-ir {
@@ -61,7 +104,7 @@ button {
     margin: 4px 2px;
 }
 
-/*Crea tres Columnas */
+/*Estilo de Columnas */
 .column {
     background-color: #f1f1f1;
     float: left;
@@ -126,7 +169,7 @@ button {
   solid #ccc;
   width:47%
 }
-/* Responsive  hace que las tres columnas se apilen una encima de otra en lugar de una al lado de la otra
+/* Responsive  hace que las columnas se apilen una encima de otra en lugar de una al lado de la otra
 @media (max-width: 600px) {
     .column.side, .column.middle {
         width: 100%;
